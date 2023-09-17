@@ -42,7 +42,7 @@ type SwipeablePanelProps = {
   barStyle?: object;
   barContainerStyle?: object,
   allowTouchOutside?: boolean;
-  children: any;
+  children?: any;
   scrollViewProps?: ScrollViewProps;
 };
 
