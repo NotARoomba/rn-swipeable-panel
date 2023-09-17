@@ -174,7 +174,7 @@ class SwipeablePanel extends Component<SwipeablePanelProps, SwipeablePanelState>
     const { smallPanelHeight } = this.props;
     let newY = 0;
 
-    if (newStatus === STATUS.CLOSED) newY = PANEL_HEIGHT;
+    if (newStatus === STATUS.CLOSED) newY = 200;
     else if (newStatus === STATUS.SMALL)
       newY = this.state.orientation === 'portrait' ? FULL_HEIGHT - (smallPanelHeight ?? 400) : FULL_HEIGHT / 3;
     else if (newStatus === STATUS.LARGE) newY = 0;
